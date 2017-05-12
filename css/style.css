@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", arial, sans-serif;
+}
+
+header {
+  height: 50px;
+  background-color: black;
+}
+
+.max-width {
+  margin: 0 150px;
+}
+
+.max-width::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+#header-logo {
+  float: left;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+#header-logo p{
+  margin: 10px 0;
+}
+span{
+  color: #5FC3AC;
+}
+#header-menu{
+  float: right;
+  margin: 10px;
+}
+#header-menu li{
+  display: inline-block;
+  list-style: none;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 45px;
+}
+
+/*Style for section banner*/
+
+#banner{
+  background-image: linear-gradient(white, #D0D0D7);
+  height: 450px;
+  width: 100%
+}
+.medium-box{
+  display: inline-block;
+  width: 49%;
+  margin: 0 auto;
+  vertical-align: top;
+}
+.black-chair{
+  padding-top: 60px;
+  margin-left: 50px;
+
+}
+.medium-box h1{
+  padding-top: 110px;
+  font-size: 40px;
+  text-align: center;
+}
+.medium-box p{
+  text-align: center;
+  color: gray;
+  padding-top: 20px;
+}
+#button-showmore{
+  width: 400px;
+  background-color: #5FC3AC;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 55px;
+
+}
+#button-showmore p{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+height: 60px;
+}
+
+/*style for section products*/
+
+#products{
+  height: 350px;
+  width: 100%
+}
+.small-box{
+  vertical-align: top;
+  margin-top: 30px;
+  display: inline-block;
+  width: 33%;
+  position: relative;
+}
+#text-on-img{
+  background-color: rgba(255,255,255,0.4);
+  position: absolute;
+  bottom:20px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  padding: 15px 0;
+
+}
+#text-on-img p{
+  vertical-align: bottom;
+  font-size: 15px;
+  border-bottom: 8px solid #5FC3AC;
+  width: 130px;
+  margin-left: 10px;
+
+}
+.content{
+  border: 1px solid lightgrey;
+  padding-left:20px;
+}
+.content p:first-of-type{
+  margin-top:20px;
+  font-size: 15px;
+  border-bottom: 8px solid #5FC3AC;
+  width: 130px;
+}
+.content p:nth-of-type(2){
+  padding: 20px 0;
+  font-size: 15px;
+  color: grey;
+}
+.content p:nth-of-type(3){
+  padding-bottom: 50px;
+  font-size: 15px;
+  color: grey;
+}

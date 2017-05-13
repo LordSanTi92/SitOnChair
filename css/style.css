@@ -1,7 +1,6 @@
   * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +13,8 @@ header {
 }
 
 .max-width {
-  margin: 0 200px;
+  margin: 0 250px;
+  position: relative;
 }
 
 .max-width::after {
@@ -50,8 +50,35 @@ span {
   font-weight: 400;
   font-size: 20px;
   padding-left: 45px;
+  position: relative;
 }
 
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: black;
+  top: 55px;
+  list-style: none;
+  margin: 0 auto;
+}
+.menu li:hover .sub-menu {
+display: block;
+list-style: none;
+}
+ul ul:after {
+    margin-left: -60px;
+}
+ul ul::after{
+position: absolute;
+    left: 50%;
+    top: -16px;
+    width: 0px;
+    height: 0px;
+    content: '';
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid black;
+}
 
 /*Style for section banner*/
 
@@ -60,7 +87,24 @@ span {
   height: 450px;
   width: 100%
 }
-
+.slider-button{
+  position: absolute;
+}
+.slider-button a{
+  text-decoration: none;
+  color: #5FC3AC;
+  font-size: 80px;
+}
+.slider-button #LT{
+  bottom: -250px;
+  left: 0px;
+position: absolute;
+}
+.slider-button #GT{
+  bottom: -250px;
+  left:  882px;
+position: absolute;
+}
 .medium-box {
   display: inline-block;
   width: 49%;
@@ -70,9 +114,11 @@ span {
 
 .black-chair {
   padding-top: 60px;
-  margin-left: 50px;
-}
 
+}
+.content-medium-box{
+  margin-right: 80px;
+}
 .medium-box h1 {
   padding-top: 110px;
   font-size: 40px;
@@ -82,7 +128,7 @@ span {
 .medium-box p {
   text-align: center;
   color: gray;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 #button-showmore {
@@ -90,7 +136,7 @@ span {
   background-color: #5FC3AC;
   border-radius: 5px;
   margin-top: 50px;
-  margin-left: 55px;
+  margin-left: 0px;
 }
 
 #button-showmore p {
@@ -98,7 +144,7 @@ span {
   font-size: 20px;
   color: white;
   font-weight: 400;
-  height: 60px;
+  height: 40px;
 }
 
 
@@ -113,16 +159,39 @@ span {
   vertical-align: top;
   margin-top: 30px;
   display: inline-block;
-  width: 33%;
+  width: 30%;
   position: relative;
 }
 
+.last{
+  float: right;
+}
+.center{
+  margin-left: 42px;
+}
+
+.img{
+  background-image: url("../images/box1_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+}
+.img2{
+  background-image: url("../images/box2_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+}
 #text-on-img {
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   bottom: 20px;
   left: 0;
-  height: 60px;
+  height: 30px;
   width: 100%;
   padding: 15px 0;
 }
@@ -183,17 +252,39 @@ span {
   margin-top: 80px;
 }
 
-#laps .max-width .small-box {
-  width: 33%;
-}
-
-
-
 .border-lap {
-  height: 390px;
+  height: 450px;
   border: 1px solid lightgrey;
   background-color: #F9F9F9;
 }
+.border-lap:hover{
+  background-color: #5FC3AC;
+
+  position: relative;
+}
+.border-lap:hover .button-buy{
+background-color: white;
+
+}
+.border-lap:hover tr:nth-of-type(odd){
+  background-color: white;
+}
+.border-lap:hover tr:nth-of-type(even){
+  background-color: lightgrey;
+}
+.border-lap:hover h2{
+  color: white;
+}
+.border-lap:hover .button-buy p{
+  color: #5FC3AC;
+}
+.border-lap:hover .circle-outter{
+  background-color: #5FC3AC;
+  border: none;
+  position: absolute;
+}
+.border-lap:hover .circle-inner{
+  background-color: white;}
 
 .circle-outter {
   height: 60px;
@@ -298,6 +389,7 @@ tbody tr:nth-of-type(even) {
 }
 .form{
   margin-top: 30px;
+  position: relative;
 }
 .title p {
   font-size: 20px;
@@ -317,22 +409,98 @@ input[type="text"],input[type="email"], textarea {
   margin-top: 10px;
   border: 1px solid rgba(179, 233, 213, 0.7);
   height: 40px;
-  width: 500px;
+  width: 580px;
   font-size: 20px;
 }
 label{
   float: right;
 }
 input[type="checkbox"]{
-  float: right;
+position: absolute;
+top:150px;
+right: 265px;
+
 }
+input[type=checkbox]:before {
+  content:"";
+  display:block;
+  width:30px;
+  height:30px;
+  background:white;
+  border: 1px solid #5FC3AC;
+ }
+ input[type=checkbox]:checked:before {
+   background-image: url("../images/form_ok.jpg");
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
 .form img{
-  float: right;
+  width: 180px;
+  height: 150px;
+  position: absolute;
+  top:-20px;
+  right: 100px;
 }
   textarea{
   	resize: none;
-    height: 150px;
+    height: 160px;
 }
 .button1{
   float: right;
+}
+label{
+  position: absolute;
+  top: 152px;
+  right: 35px;
+  font-size: 14px;
+  color: lightgrey;
+}
+label span{
+  display: block;
+  color: lightgrey;
+}
+.button-send{
+    background-color: #5FC3AC;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 280px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 22px
+  }
+  .button-send:hover{
+    background-color: white;
+    color: #5FC3AC;
+    border: 1px solid #5FC3AC;
+
+  }
+.copy{
+  margin-top: 20px;
+  float: left;
+  margin-bottom: 50px;
+}
+.copy p{
+  color: lightgrey;
+  font-size: 12px;
+}
+.social-media {
+  margin-right: 200px;
+}
+.social-media img{
+  display: inline;
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+.footer-logo p{
+  font-size: 18px;
+  color: lightgrey;
+  float: right;
+}
+.footer-logo p strong{
+  color: grey;
 }

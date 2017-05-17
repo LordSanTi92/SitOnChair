@@ -418,23 +418,32 @@ label{
 input[type="checkbox"]{
 position: absolute;
 top:150px;
-right: 265px;
+right: 250px;
+height: 20px;
+width: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
 
 }
-input[type=checkbox]:before {
-  content:"";
-  display:block;
-  width:30px;
-  height:30px;
-  background:white;
-  border: 1px solid #5FC3AC;
- }
- input[type=checkbox]:checked:before {
-   background-image: url("../images/form_ok.jpg");
-   background-size: contain;
-   background-position: center;
-   background-repeat: no-repeat;
- }
+input[type=checkbox]:after {
+    content: " ";
+    background-color: white;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2BCBAC;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked:after {
+    content: '';
+    background-image: url("../images/form_ok.jpg");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 .form img{
   width: 180px;
   height: 150px;

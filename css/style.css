@@ -46,38 +46,56 @@ span {
 #header-menu li {
   display: inline-block;
   list-style: none;
+
+}
+#header-menu li>a{
   color: white;
   font-weight: 400;
   font-size: 20px;
-  padding-left: 45px;
+  padding: 15px 25px;
   position: relative;
+  text-decoration: none;
+}
+#header-menu li a:hover{
+  background-color: #5FC3AC;
+  color: white;
+}
+#header-menu li a:hover, .dropdown:hover .dropbtn {
+    background-color: #2BCBAC;
 }
 
-.sub-menu {
-  display: none;
-  position: absolute;
-  background-color: black;
-  top: 55px;
-  list-style: none;
-  margin: 0 auto;
+.dropdown-content {
+    display: none;
+   position: absolute;
+   background-color: black;
+   z-index: 1;
+   top: 60px;
+   font-size: 17px;
 }
-.menu li:hover .sub-menu {
-display: block;
-list-style: none;
+.dropdown-content a {
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
 }
-ul ul:after {
-    margin-left: -60px;
+
+.dropdown-content a:hover {
+    background-color: #2BCBAC;
 }
-ul ul::after{
-position: absolute;
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -20px;
     left: 50%;
-    top: -16px;
-    width: 0px;
-    height: 0px;
-    content: '';
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid black;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+    transform: translateX(-50%);
 }
 
 /*Style for section banner*/

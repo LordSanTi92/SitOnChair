@@ -1,0 +1,44 @@
+footer{
+  height: 40px;
+  p{
+    color: lightgrey;
+  }
+  .content{
+    margin-left: 60px;
+  img{
+    width: 20px;
+    }
+    p{
+      float: right;
+      margin-left: 20px;
+      margin-top: 5px;
+      font-size: 1.2rem;
+      span{
+        font-weight: 600;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 850px) {
+  footer{
+    height: 40px;
+    p{
+      color: lightgrey;
+    }
+    .content{
+      margin-left: 60px;
+    img{
+      width: 20px;
+      }
+      p{
+        float: right;
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 1.2rem;
+        span{
+          font-weight: 600;
+        }
+      }
+    }
+}
+}

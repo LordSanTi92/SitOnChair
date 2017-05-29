@@ -1,0 +1,974 @@
+@import "./partials/reset.scss";
+@import "./modules/all.scss";
+@import "./modules/colors.scss";
+@import "./partials/base.scss";
+@import "./partials/footer.scss";
+@import "./partials/header.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Raleway, Arial, sans-serif;
+}
+
+#baner {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#ffffff', endColorstr='#ededed', GradientType=0 );
+
+  .slider ul{
+      list-style: none;
+  }
+
+  .slider li{
+      display: none;
+      width: 300px;
+      margin: 0 auto;
+  }
+
+  .slider .visible{
+            display: block;
+
+  }
+  .col-1{
+    display: none;
+  }
+  img {
+    max-width: 300px;
+
+  }
+  .col-11:nth-of-type(3) {
+    text-align: center;
+
+    h1 {
+      margin-top: 5%;
+      font-size: 5vw;
+      font-weight: normal;
+
+      span {
+        color: $mainColor;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      margin-top: 8%;
+      font-size: 2.5vw;
+      color: $textColor;
+      line-height: 150%;
+    }
+
+    button {
+      margin:5% auto;
+      width: 220px;
+      height: 40px;
+      border-radius: 5px;
+      color: white;
+      background-color: $mainColor;
+      border: none;
+      font-size: 1.7rem;
+    }
+  }
+
+}
+
+#prodcutType {
+  height: 800px;
+
+  .col-8:nth-of-type(1) .product {
+    margin: 5px 0;
+    height: 250px;
+    background-image: url("../images/box1_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .col-8:nth-of-type(2) .product {
+    margin: 5px 0;
+    height: 250px;
+    background-image: url("../images/box2_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+  }
+  .infoAbout{
+    margin: 0 auto;
+    width: 365px;
+    display: none;
+    height: 30%;
+    p{
+      padding-top: 15px;
+      min-width: 100px;
+      font-size: 5vw;
+      color: black;
+      border-bottom: 0.6rem solid $mainColor;
+    }
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .textProduct {
+    margin: 20px 0 0;
+    border: 1px solid lightgrey;
+    height: 240px;
+
+    p:nth-of-type(1) {
+      padding-top: 20px;
+      margin-left: 10px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      width: 150px;
+      border-bottom: 0.6rem solid $mainColor;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 1.2rem;
+      margin: 0 10px;
+      padding-top: 20px;
+      color: $textColor;
+    }
+
+    p:nth-of-type(3) {
+      font-size: 1.2rem;
+      margin:0 10px;
+      padding-top: 20px;
+      color: $textColor;
+    }
+  }
+}
+#lapSection {
+  height: 1750px;
+  background-color: #F1F1F1;
+  .headLap{
+    width: 300px;
+    margin: 5% 0 7% 0;
+    font-size: 1.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.6rem solid $mainColor;
+  }
+
+  .col-8:nth-of-type(1) .content {
+    width: 70%;
+    margin: 60px auto;
+
+  }
+
+  .col-8:nth-of-type(2) .content {
+    width: 70%;
+    margin: 60px auto;
+  }
+
+  .col-8:nth-of-type(3) .content {
+    width: 70%;
+    margin: 60px auto;
+  }
+
+  .lapBorder {
+    border: 1px solid #C2C2C2;
+    box-shadow: 0 0 2px #C2C2C2;
+    height: 470px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+
+    p {
+      margin-top: 40px;
+      color: $mainColor;
+      font-size: 2rem;
+    }
+
+    .priceTag {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid lightgrey;
+      width: 100px;
+      height: 100px;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+      p {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 3rem;
+        color: grey;
+
+        span {
+          display: block;
+          font-size: 1rem;
+          color: grey;
+        }
+      }
+    }
+
+    .outter-circle {
+      background-color: white;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      border: 1px solid #C2C2C2;
+      border-radius: 50%;
+      top: -8%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .inner-circle {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        border-radius: 50px;
+        background-color: #C2C2C2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+    table {
+      width: 100%;
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-collapse: collapse;
+      tr{
+        &:nth-of-type(odd){
+          background-color: #E4E4E4;
+        }
+        &:nth-of-type(even){
+          background-color: #F1F1F1;
+        }
+      }
+      td {
+        text-align: center;
+        font-size: 1.8rem;
+        height: 30px;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 120px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: $mainColor;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+}
+#forms{
+  height: 700px;
+  .headLap{
+    width: 300px;
+    margin: 5% 0 3% 0;
+    font-size: 1.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.6rem solid $mainColor;
+  }
+  .col-14{
+  input, textarea{
+    display: block;
+    width: 100%;
+    border:1px solid  lighten($mainColor,35%);
+    @include placeholder{
+      color: lighten(grey,25%);
+      font-size: 2rem;
+      font-weight: 100;
+    };
+  }
+  input{
+    margin: 3% 0;
+    height: 50px;
+    font-size: 2rem;
+    padding-left: 10px;
+
+  }
+  textarea{
+    resize: none;
+    height: 120px;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+}
+
+.col-10{
+  img{
+    margin-left: 0;
+    max-width: 180px;;
+  }
+  .row{
+    margin: 0;
+  }
+   input{
+     position: relative;
+     float: left;
+    display: block;
+    margin-left: 0px;
+    margin-top: 22px;
+    &:after{
+      content: "";
+      position: absolute;
+      top: -5px;
+      left:-5px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $mainColor;
+      background-color: white;
+      cursor: pointer;
+    }
+    &:checked:after{
+      background-image: url("../images/form_ok.jpg");
+      content: "";
+      top: -5px;
+      left:-5px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $mainColor;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  p{
+    display: block;
+    margin: 20px 30px 0 35px;
+    height: 40px;
+    font-size: 1.4rem;
+    color: lightgrey;
+  }
+  button{
+    margin: 22px 0 0 0px;
+    width: 250px;
+    height: 45px;
+    color: white;
+    background-color: $mainColor;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+}
+}
+
+@media only screen and (min-width: 600px){
+  #baner {
+
+    padding-top: 30px;
+    height: 600px;
+    .slider ul{
+        list-style: none;
+
+    }
+
+    .slider li{
+        display: none;
+        width: 300px;
+        margin: 0 auto;
+
+    }
+
+    .slider .visible{
+        display: block;
+
+    }
+    img {
+      width: 300px;
+
+    }
+    .col-1:nth-of-type(1){
+      display: block;
+      position: relative;
+    a {
+      position: absolute;
+      top:250px;
+      font-size: 5rem;
+      color: $mainColor;
+      text-decoration: none;
+    }
+  }
+  .col-1:nth-of-type(4){
+    display: block;
+    position: relative;
+  a {
+    position: absolute;
+    top:-258px;
+    right:0px;
+    font-size: 5rem;
+    color: $mainColor;
+    text-decoration: none;
+  }
+}
+    .col-11:nth-of-type(3) {
+      text-align: center;
+
+      h1 {
+        margin-top: 10%;
+        font-size: 3.5rem;
+        font-weight: normal;
+
+        span {
+          color: $mainColor;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        margin-top: 8%;
+        font-size: 1.3rem;
+        color: $textColor;
+        line-height: 150%;
+      }
+
+      button {
+        margin-top: 5%;
+        width: 220px;
+        height: 40px;
+        border-radius: 5px;
+        color: white;
+        background-color: $mainColor;
+        border: none;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 850px) {
+  #baner {
+    padding-top: 100px;
+    height: 450px;
+    .slider ul{
+        list-style: none;
+    }
+
+    .slider li{
+        display: none;
+    }
+
+    .slider .visible{
+        display: inline-block;
+    }
+    img {
+    max-width: 400px;
+    }
+    .col-1:nth-of-type(1), .col-1:nth-of-type(4){
+      display: block;
+      position: relative;
+    a {
+      position: absolute;
+      top:100px;
+      font-size: 5rem;
+      color: $mainColor;
+      text-decoration: none;
+    }
+  }
+    .col-11:nth-of-type(3) {
+      text-align: center;
+
+      h1 {
+        margin-top: 10%;
+        font-size: 3.5rem;
+        font-weight: normal;
+
+        span {
+          color: $mainColor;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        margin-top: 8%;
+        font-size: 1.3rem;
+        color: $textColor;
+        line-height: 150%;
+      }
+
+      button {
+        margin-top: 5%;
+        width: 220px;
+        height: 40px;
+        border-radius: 5px;
+        color: white;
+        background-color: $mainColor;
+        border: none;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  #prodcutType {
+    height: 800px;
+
+    .col-8:nth-of-type(1) .product {
+      margin: 5px 0;
+      height: 250px;
+      background-image: url("../images/box1_img.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .col-8:nth-of-type(2) .product {
+      margin: 5px 0;
+      height: 250px;
+      background-image: url("../images/box2_img.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: flex;
+      align-items: flex-end;
+    }
+    .infoAbout{
+      margin: 0 auto;
+      width: 365px;
+      display: none;
+      height: 20%;
+      p{
+        padding-top: 15px;
+        min-width: 100px;
+        font-size: 3vw;
+        color: black;
+        border-bottom: 0.6rem solid $mainColor;
+      }
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .textProduct {
+      margin: 0 auto;
+      border: 1px solid lightgrey;
+      height: 240px;
+      max-width: 365px;
+
+      p:nth-of-type(1) {
+        padding-top: 20px;
+        margin-left: 10px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        width: 150px;
+        border-bottom: 0.6rem solid $mainColor;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 1.2rem;
+        margin: 0 10px;
+        padding-top: 20px;
+        color: $textColor;
+      }
+
+      p:nth-of-type(3) {
+        font-size: 1.2rem;
+        margin:0 10px;
+        padding-top: 20px;
+        color: $textColor;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 850px) {
+  #prodcutType {
+    height: 320px;
+
+    .col-8:nth-of-type(1) .product {
+      margin: 0 10px;
+      height: 250px;
+      background-image: url("../images/box1_img.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: block;
+      position: relative;
+    }
+
+    .col-8:nth-of-type(2) .product {
+      margin: 0 10px;
+      height: 250px;
+      background-image: url("../images/box2_img.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: block;
+      position: relative;
+    }
+    .infoAbout{
+      margin: 0 auto;
+      display:none;
+      width: 100%;
+      height: 20%;
+      position: absolute;
+      top: 60%;
+      transform: translateY(-20%);
+      p{
+        margin-left: 10px;
+        padding-top: 15px;
+        width: 50%;
+        font-size: 1.1vw;
+        color: black;
+        border-bottom: 0.6rem solid $mainColor;
+      }
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .textProduct {
+      margin: 20px 0 0;
+      border: 1px solid lightgrey;
+      height: 240px;
+
+      p:nth-of-type(1) {
+        padding-top: 20px;
+        margin-left: 10px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        width: 150px;
+        border-bottom: 0.6rem solid $mainColor;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 1.2rem;
+        margin: 0 10px;
+        padding-top: 20px;
+        color: $textColor;
+      }
+
+      p:nth-of-type(3) {
+        font-size: 1.2rem;
+        margin:0 10px;
+        padding-top: 20px;
+        color: $textColor;
+      }
+    }
+  }
+
+
+  @media only screen and (min-width: 850px) {
+    #lapSection {
+      height: 680px;
+      background-color: #F1F1F1;
+      .headLap{
+        width: 300px;
+        margin: 5% 0 7% 0;
+        font-size: 1.8rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 0.6rem solid $mainColor;
+      }
+
+      .col-8:nth-of-type(1) .content {
+        width: 95%;
+
+      }
+
+      .col-8:nth-of-type(2) .content {
+        width: 95%;
+        margin-left: 3%;
+      }
+
+      .col-8:nth-of-type(3) .content {
+        width: 95%;
+        float: right;
+      }
+
+      .lapBorder {
+        border: 1px solid #C2C2C2;
+        box-shadow: 0 0 2px #C2C2C2;
+        height: 470px;
+        position: relative;
+        background-color: white;
+        text-align: center;
+
+        p {
+          margin-top: 40px;
+          color: $mainColor;
+          font-size: 2rem;
+        }
+
+        .priceTag {
+          position: absolute;
+          border-radius: 50%;
+          border: 1px solid lightgrey;
+          width: 100px;
+          height: 100px;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+
+          p {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 3rem;
+            color: grey;
+
+            span {
+              display: block;
+              font-size: 1rem;
+              color: grey;
+            }
+          }
+        }
+
+        .outter-circle {
+          background-color: white;
+          position: absolute;
+          height: 50px;
+          width: 50px;
+          border: 1px solid #C2C2C2;
+          border-radius: 50%;
+          top: -8%;
+          left: 50%;
+          transform: translateX(-50%);
+
+          .inner-circle {
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            border-radius: 50px;
+            background-color: #C2C2C2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          }
+        }
+
+        table {
+          width: 100%;
+          position: absolute;
+          top: 52%;
+          left: 50%;
+          transform: translateX(-50%);
+          border-collapse: collapse;
+          tr{
+            &:nth-of-type(odd){
+              background-color: #E4E4E4;
+            }
+            &:nth-of-type(even){
+              background-color: #F1F1F1;
+            }
+          }
+          td {
+            text-align: center;
+            font-size: 1.8rem;
+            height: 30px;
+          }
+        }
+
+        button {
+          position: absolute;
+          top: 90%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 120px;
+          height: 30px;
+          border-radius: 5px;
+          background-color: $mainColor;
+          border: none;
+          color: white;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 850px) {
+#forms{
+  height: 500px;
+  .headLap{
+    width: 300px;
+    margin: 5% 0 3% 0;
+    font-size: 1.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.6rem solid $mainColor;
+  }
+  .col-14{
+  input, textarea{
+    display: block;
+    width: 100%;
+    border:1px solid  lighten($mainColor,35%);
+    @include placeholder{
+      color: lighten(grey,25%);
+      font-size: 2rem;
+      font-weight: 100;
+    };
+  }
+  input{
+    margin: 3% 0;
+    height: 50px;
+    font-size: 2rem;
+    padding-left: 10px;
+
+  }
+  textarea{
+    resize: none;
+    height: 120px;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+}
+
+.col-10{
+  img{
+    margin-left: 15%;
+    max-width: 180px;;
+  }
+   input{
+     position: relative;
+     float: left;
+    display: block;
+    margin-left: 22px;
+    margin-top: 22px;
+    &:after{
+      content: "";
+      position: absolute;
+      top: -5px;
+      left:-5px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $mainColor;
+      background-color: white;
+      cursor: pointer;
+    }
+    &:checked:after{
+      background-image: url("../images/form_ok.jpg");
+      content: "";
+      top: -5px;
+      left:-5px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $mainColor;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  p{
+    display: block;
+    margin: 18px 20px 0 60px;
+    height: 40px;
+    font-size: 1.4rem;
+    color: lightgrey;
+  }
+  button{
+    margin: 22px 0 0 55px;
+    width: 250px;
+    height: 45px;
+    color: white;
+    background-color: $mainColor;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+}
+}
+}
+@media only screen and (min-width: 850px) {
+
+  #forms{
+    height: 500px;
+    .headLap{
+      width: 300px;
+      margin: 5% 0 3% 0;
+      font-size: 1.8rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 0.6rem solid $mainColor;
+    }
+    .col-14{
+    input, textarea{
+      display: block;
+      width: 100%;
+      border:1px solid  lighten($mainColor,35%);
+      @include placeholder{
+        color: lighten(grey,25%);
+        font-size: 2rem;
+        font-weight: 100;
+      };
+    }
+    input{
+      margin: 3% 0;
+      height: 50px;
+      font-size: 2rem;
+      padding-left: 10px;
+
+    }
+    textarea{
+      resize: none;
+      height: 120px;
+      padding-left: 10px;
+      padding-top: 5px;
+    }
+  }
+
+  .col-10{
+    img{
+      margin-left: 15%;
+      max-width: 180px;;
+    }
+     input{
+       position: relative;
+       float: left;
+      display: block;
+      margin-left: 22px;
+      margin-top: 22px;
+      &:after{
+        content: "";
+        position: absolute;
+        top: -5px;
+        left:-5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $mainColor;
+        background-color: white;
+        cursor: pointer;
+      }
+      &:checked:after{
+        background-image: url("../images/form_ok.jpg");
+        content: "";
+        top: -5px;
+        left:-5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $mainColor;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    p{
+      display: block;
+      margin: 18px 20px 0 60px;
+      height: 40px;
+      font-size: 1.4rem;
+      color: lightgrey;
+    }
+    button{
+      margin: 22px 0 0 55px;
+      width: 250px;
+      height: 45px;
+      color: white;
+      background-color: $mainColor;
+      border: none;
+      font-size: 2rem;
+      border-radius: 5px;
+    }
+  }
+ }
+}

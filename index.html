@@ -5,249 +5,243 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script type="text/javascript" src="./js/app.js"></script>
   <title>Warsztaty</title>
+  <meta name="viewport" content="width=device-width,  initial-scale=1.0">
 </head>
 
 <body>
-  <header>
-    <div class="max-width">
-      <div id="header-logo">
-        <p>
-          SIT <span>ON</span> CHAIR
-        </p>
-      </div>
-      <div id="header-menu">
-        <ul class="menu">
-          <li class="dropdown">
-            <a href="#">O FIRMIE</a>
-            <div class="dropdown-content">
-              <a href="#">Aktualności</a>
-              <a href="#">Nasz team</a>
-              <a href="#">Historia</a>
-            </div>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-8">
+          <p>SIT <span>ON</span> CHAIR</p>
+        </div>
+        <div class="col-16">
+          <ul>
+            <li>O FIRMIE
+              <ul>
+                <li>Aktualności</li>
+                <li>Nasz team</li>
+                <li>Historia</li>
+              </ul>
             </li>
-          <li><a href="#">GALERIA</a></li>
-          <li><a href="#">KONTAKT</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-
-  <section id="banner">
-    <div class="max-width">
-      <div class="slider-button">
-        <a id="LT"href="#">&lt;</a>
-        <a id="GT"href="#">&gt;</a>
-      </div>
-      <div class="medium-box">
-        <img class="black-chair" src="./images/black_chair.png" alt="black chair" title="black chari"></img>
-      </div>
-      <div class="medium-box">
-        <div class="content-medium-box">
-        <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <div id="button-showmore">
-          <p>
-            ZOBACZ WIĘCEJ
-          </p>
+            <li>GALERIA</li>
+            <li>KONTAKT</li>
+          </ul>
         </div>
       </div>
+    </header>
+
+    <section id="baner">
+      <div class="row">
+        <div class="col-1"><a class="prev" href="#">&lt;</a></div>
+        <div class="col-11">
+          <ul>
+            <li><img src="./images/black_chair.png" alt="Black-chair" title="Black Chair"></img></li>
+            <li><img src="./images/orange.png" alt="Orange-chair" title="Orange Chair"></img></li>
+            <li><img src="./images/red.png" alt="Red-chair" title="Red Chair"></img></li>
+          </ul>
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="head">
+              <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="bannerText">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="buttonShowMore">
+              <button type="button" name="button">ZOBACZ WIĘCEJ</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"><a class="next" href="#">&gt;</a></div>
       </div>
-    </div>
+    </section>
 
-  </section>
 
-  <section id="products">
-    <div class="max-width">
-      <div class="small-box">
-        <div class="img">
-        <div id="text-on-img">
-          <p>
-            <strong>Chair CLAIR</strong>
-          </p>
+    <section id="prodcutType">
+      <div class="row">
+        <div class="col-8">
+          <div class="product">
+
+            <div class="infoAbout">
+              <p>Chair Clair</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="product">
+            
+            <div class="infoAbout">
+              <p>Chair Margarita</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="textProduct">
+            <p>Finds all inputs</p>
+            <p>Finds all inputs that are not checkes and highlits the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked</p>
+            <p>Notice there is no change when clicking the checkboxes since no click events have been linked</p>
+          </div>
         </div>
       </div>
-      </div>
-      <div class="small-box center">
-        <div class="img2">
-        <div id="text-on-img">
-          <p>
-            <strong>Chair MARGARITA</strong>
-          </p>
-        </div>
-      </div>
-      </div>
-      <div class="small-box last">
-        <div class="content">
-          <p>
-            <strong>Finds all input</strong>
-          </p>
-          <p>
-            Finds all input that are not checked and highlites the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
-          </p>
-          <p>
-            Notice there is no change when clicking the checkboxes since no click events have been linked.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="laps">
-    <div class="max-width">
-      <div class="title">
-        <p>
+    <section id="lapSection">
+      <div class="row">
+        <p class="headLap">
           CENNIK
         </p>
-      </div>
-      <div class="small-box">
-        <div class="border-lap">
-          <div class="circle-outter">
-            <div class="circle-inner">
+        <div class="col-8">
+          <div class="content">
+            <div class="lapBorder">
+              <div class="outter-circle">
+                <div class="inner-circle">
+                </div>
+              </div>
+              <p>BASIC PLAN</p>
+              <div class="priceTag">
+                <p>85<sup>99</sup> <span>PLN/MSC</span></p>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Zakup towaru + dowóz</td>
+                  </tr>
+                  <tr>
+                    <td>Serwis</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" name="add">DOŁĄCZ</button>
             </div>
           </div>
-          <h2>BASIC PLAN</h2>
-          <div class="circle-price">
-            <p>
-              <strong>85<sup>99</sup></strong>
-              <span>PLN/MSC</span>
-            </p>
+        </div>
+        <div class="col-8">
+          <div class="content">
+            <div class="lapBorder">
+              <div class="outter-circle">
+                <div class="inner-circle">
+                </div>
+              </div>
+              <p>STANDARD PLAN</p>
+              <div class="priceTag">
+                <p>95<sup>99</sup> <span>PLN/MSC</span></p>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Zakup towaru + dowóz</td>
+                  </tr>
+                  <tr>
+                    <td>Serwis</td>
+                  </tr>
+                  <tr>
+                    <td>Gwarancja 5 lat</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" name="add">DOŁĄCZ</button>
+            </div>
           </div>
-          <table>
-            <tbody>
-              <tr>
-                <td>Zakup towaru + dowóz</td>
-              </tr>
-              <tr>
-                <td>Serwis</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="button-buy">
-            <p>
-              DOŁĄCZ
-            </p>
+        </div>
+        <div class="col-8">
+          <div class="content">
+            <div class="lapBorder">
+              <div class="outter-circle">
+                <div class="inner-circle">
+                </div>
+              </div>
+              <p>ADVANCE PLAN</p>
+              <div class="priceTag">
+                <p>211<sup>00</sup> <span>PLN/MSC</span></p>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Zakup towaru + dowóz</td>
+                  </tr>
+                  <tr>
+                    <td>Serwis</td>
+                  </tr>
+                  <tr>
+                    <td>Gwarancja 6 lat</td>
+                  </tr>
+                  <tr>
+                    <td>Porady projektanta</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" name="add">DOŁĄCZ</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="small-box center">
-        <div class="border-lap">
-          <div class="circle-outter">
-            <div class="circle-inner">
-            </div>
-          </div>
-          <h2>STANDARD PLAN</h2>
-          <div class="circle-price">
-            <p>
-              <strong>95<sup>99</sup></strong>
-              <span>PLN/MSC</span>
-            </p>
-          </div>
-          <table>
-            <tbody>
-              <tr>
-                <td>Zakup towaru + dowóz</td>
-              </tr>
-              <tr>
-                <td>Serwis</td>
-              </tr>
-              <tr>
-                <td>Gwarancja 5 lat</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="button-buy">
-            <p>
-              DOŁĄCZ
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="small-box last">
-        <div class="border-lap">
-          <div class="circle-outter">
-            <div class="circle-inner">
-            </div>
-          </div>
-          <h2>ADVANCE PLAN</h2>
-          <div class="circle-price">
-            <p>
-              <strong>211<sup>00</sup></strong>
-              <span>PLN/MSC</span>
-            </p>
-          </div>
-          <table>
-            <tbody>
-              <tr>
-                <td>Zakup towaru + dowóz</td>
-              </tr>
-              <tr>
-                <td>Serwis</td>
-              </tr>
-              <tr>
-                <td>Gwarancja 5 lat</td>
-              </tr>
-              <tr>
-                <td>Porady projektanta</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="button-buy">
-            <p>
-              DOŁĄCZ
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
-  </section>
-
-  <section id="forms">
-    <div class="max-width">
-      <div class="title">
-        <p>
+    <section id="forms">
+      <div class="row">
+        <p class="headLap">
           KONTAKT
         </p>
+        <div class="col-14">
+          <form class="data" action="index.html" method="post">
+            <input type="text" name="name" value="" placeholder="Imię">
+            <input type="email" name="mail" value="" placeholder="email">
+            <textarea name="message" placeholder="Wiadomość"></textarea>
+        </div>
+        <div class="col-10">
+          <img src="./images/red_chair.png" alt="red_chair" title="Red Chair"></img>
+          <div class="row">
+            <div>
+              <input type="checkbox" name="allowfor" value="">
+            </div>
+            <div>
+              <p>
+                Zgadzam się na przetwarzanie danych osobowych
+              </p>
+            </div>
+          </div>
+          <button type="button" name="Send">WYŚLIJ</button>
+          </form>
+        </div>
       </div>
-      <div class="form">
-        <form class="kontakt" action="index.html" method="post">
-          <input type="text" name="first-name" value="" placeholder="Imię">
-          <input type="email" name="email" value="" placeholder="email">
-          <img src="./images/red_chair.png" alt="red chair" title="red chair"></img>
-          <label>Zgadzam sie na przetwarzanie <span>danych osobowych.</span></label>
-          <input type="checkbox" name="check" value="">
-          <textarea name="message" value="" placeholder="Wiadomość"></textarea>
-          <button class="button-send">WYŚLIJ</button>
-        </form>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="col-14">
+          <p>Copyright 2014 | All Rights Reserved - Sit On Chair</p>
+        </div>
+        <div class="col-10"><div class="content">
+          <img src="./images/flickr.png" alt="flickr" title="flickr"></img>
+          <img src="./images/vimeo.png" alt="vimeo" title="vimeo"></img>
+          <img src="./images/pinterest.png" alt="pinterest" title="pinterest"></img>
+          <img src="./images/twitter.png" alt="twitter" title="twitter"></img>
+          <p>SIT <span>ON</span> CHAIR</p>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <footer>
-    <div class="max-width">
-    <div class="copy">
-      <p>
-          Copyright 2014| All Rights Reserved - Sit on chair
-      </p>
-    </div>
-    <div class="footer-logo">
-      <p>
-        SIT <strong>ON</strong> CHAIR
-      </p>
-    </div>
-    <div class="social-media">
-      <img src="./images/flickr.png" alt="flick" title="flickr"></img>
-      <img src="./images/vimeo.png" alt="vimeo" title="vimeo"></img>
-      <img src="./images/pinterest.png" alt="pinterest" title="pinterest"></img>
-      <img src="./images/twitter.png" alt="twitter" title="twitter"></img>
-    </div>
+      </div>
+    </footer>
 
-    </div>
-  </footer>
+  </div>
 
+
+
+
+
+
+
+
+  </div>
 </body>
 
 </html>

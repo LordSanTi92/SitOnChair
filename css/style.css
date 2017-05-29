@@ -899,12 +899,15 @@ body {
       padding-bottom: 0.3rem;
       border-bottom: 0.6rem solid #27c7ab; }
     #lapSection .col-8:nth-of-type(1) .content {
-      width: 95%; }
+      width: 95%;
+      margin: 0; }
     #lapSection .col-8:nth-of-type(2) .content {
       width: 95%;
+      margin: 0;
       margin-left: 3%; }
     #lapSection .col-8:nth-of-type(3) .content {
       width: 95%;
+      margin: 0;
       float: right; }
     #lapSection .lapBorder {
       border: 1px solid #C2C2C2;

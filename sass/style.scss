@@ -273,6 +273,38 @@ body {
       font-size: 1.5rem;
     }
   }
+  .lapBorder:hover{
+    background-color: $mainColor;
+    .outter-circle{
+      background-color: $mainColor;
+      border: none;
+      .inner-circle{
+        background-color: white;
+      }
+    }
+    p{
+      color: white;
+    }
+    .priceTag{
+      background-color: white;
+      p, span{
+        color: $mainColor;
+      }
+    }
+    tr{
+      &:nth-of-type(odd){
+      background-color: white;
+    }
+    &:nth-of-type(even){
+      background-color: #E4E4E4;
+    }
+
+    }
+    button{
+      background-color: white;
+      color: $mainColor;
+    }
+  }
 }
 #forms{
   height: 700px;

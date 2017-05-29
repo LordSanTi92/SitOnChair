@@ -583,6 +583,26 @@ body {
       border: none;
       color: white;
       font-size: 1.5rem; }
+  #lapSection .lapBorder:hover {
+    background-color: #27c7ab; }
+    #lapSection .lapBorder:hover .outter-circle {
+      background-color: #27c7ab;
+      border: none; }
+      #lapSection .lapBorder:hover .outter-circle .inner-circle {
+        background-color: white; }
+    #lapSection .lapBorder:hover p {
+      color: white; }
+    #lapSection .lapBorder:hover .priceTag {
+      background-color: white; }
+      #lapSection .lapBorder:hover .priceTag p, #lapSection .lapBorder:hover .priceTag span {
+        color: #27c7ab; }
+    #lapSection .lapBorder:hover tr:nth-of-type(odd) {
+      background-color: white; }
+    #lapSection .lapBorder:hover tr:nth-of-type(even) {
+      background-color: #E4E4E4; }
+    #lapSection .lapBorder:hover button {
+      background-color: white;
+      color: #27c7ab; }
 
 #forms {
   height: 700px; }

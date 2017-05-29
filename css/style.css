@@ -1135,6 +1135,8 @@ body {
     #forms .col-10 img {
       margin-left: 15%;
       max-width: 180px; }
+    #forms .col-10 .row {
+      margin: 0 10% 0 10%; }
     #forms .col-10 input {
       position: relative;
       float: left;

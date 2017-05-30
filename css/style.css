@@ -394,11 +394,12 @@ header {
       text-align: center;
       height: 90px; }
     header .menu ul > li > div > ul > li {
-      height: 20px;
-      padding-top: 10px;
+      margin-top: 5px;
+      height: 25px;
       color: white; }
     header .menu ul > li > div > ul > li:hover {
-      color: #27c7ab; }
+      background-color: #27c7ab;
+      color: white; }
 
 .longerHeader {
   height: 250px; }
@@ -411,7 +412,7 @@ header {
   header .col-16:nth-of-type(2) .menu {
     position: inherit;
     height: 40px;
-    display: inline-block;
+    display: inline-block !important;
     float: right; }
     header .col-16:nth-of-type(2) .menu ul {
       position: relative;
@@ -448,7 +449,8 @@ header {
       height: 120px; }
       header .col-16:nth-of-type(2) .menu ul > li > div > ul li {
         padding: 10px;
-        width: 100px; }
+        width: 100px;
+        margin: 0; }
       header .col-16:nth-of-type(2) .menu ul > li > div > ul li:hover {
         background-color: #27c7ab;
         color: white; }
@@ -485,7 +487,7 @@ body {
     display: none;
     width: 300px;
     margin: 0 auto; }
-  #baner .slider .visible {
+  #baner .visible {
     display: block; }
   #baner .col-1 {
     display: none; }

@@ -1,52 +1,52 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  var visibleElementsLi = document.querySelector("ul").children
-  var ulElement = document.querySelector("ul");
-  var firstLi = document.querySelector("header ul li")
+  var visibleElementsLi = document.querySelector(".menu ul").children
+  var ulElement = document.querySelector(".menu ul");
+  var firstLi = document.querySelector(".menu ul li")
 
   for (var i = 0; i < visibleElementsLi.length; i++) {
     visibleElementsLi[i].addEventListener("mouseover", function() {
-      if (this.querySelector("ul") != null) {
-        this.querySelector("ul").style.display = "block"
+      if (this.querySelector(".menu ul") != null) {
+        this.querySelector(".menu ul").style.display = "block"
       }
     })
     visibleElementsLi[i].addEventListener("mouseout", function() {
-      if (this.querySelector("ul") != null) {
-        this.querySelector("ul").style.display = "none"
+      if (this.querySelector(".menu ul") != null) {
+        this.querySelector(".menu ul").style.display = "none"
 
       }
     })
   }
 
 
-  var ulElement = document.querySelector("#baner ul")
-  var liElements = document.querySelectorAll("#baner ul li")
+  var ulBanerElement = document.querySelector("#baner ul")
+  var liBanerElements = document.querySelectorAll("#baner ul li")
   var nextButton = document.querySelector("#baner .next")
   var prevButton = document.querySelector("#baner .prev")
-  ulElement.setAttribute("class", "slider")
+  ulBanerElement.setAttribute("class", "slider")
   var counter = 0;
-  liElements[counter].setAttribute("class", "visible")
+  liBanerElements[counter].setAttribute("class", "visible")
   nextButton.addEventListener("click", function() {
-    if (counter >= liElements.length - 1) {
-      liElements[counter].removeAttribute("class", "visible")
+    if (counter >= liBanerElements.length - 1) {
+      liBanerElements[counter].removeAttribute("class", "visible")
       counter = 0
-      liElements[counter].setAttribute("class", "visible")
+      liBanerElements[counter].setAttribute("class", "visible")
     } else {
-      liElements[counter].removeAttribute("class", "visible")
+      liBanerElements[counter].removeAttribute("class", "visible")
       counter++;
-      liElements[counter].setAttribute("class", "visible")
+      liBanerElements[counter].setAttribute("class", "visible")
     }
   })
 
   prevButton.addEventListener("click", function() {
     if (counter == 0) {
-      liElements[counter].removeAttribute("class", "visible")
-      counter = liElements.length - 1;
-      liElements[counter].setAttribute("class", "visible")
+      liBanerElements[counter].removeAttribute("class", "visible")
+      counter = liBanerElements.length - 1;
+      liBanerElements[counter].setAttribute("class", "visible")
     } else {
-      liElements[counter].removeAttribute("class", "visible")
+      liBanerElements[counter].removeAttribute("class", "visible")
       counter--;
-      liElements[counter].setAttribute("class", "visible")
+      liBanerElements[counter].setAttribute("class", "visible")
 
     }
   })

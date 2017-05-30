@@ -35,13 +35,12 @@ body {
 
   .slider .visible{
             display: block;
-
   }
   .col-1{
     display: none;
   }
   img {
-    max-width: 300px;
+    width: 300px;
 
   }
   .col-11:nth-of-type(3) {
@@ -499,7 +498,7 @@ body {
         display: inline-block;
     }
     img {
-    max-width: 400px;
+    width: 400px;
     }
     .col-1:nth-of-type(1), .col-1:nth-of-type(4){
       display: block;

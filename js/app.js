@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var visibleElementsLi = document.querySelector("ul").children
   var ulElement = document.querySelector("ul");
+  var firstLi = document.querySelector("header ul li")
 
   for (var i = 0; i < visibleElementsLi.length; i++) {
     visibleElementsLi[i].addEventListener("mouseover", function() {
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     visibleElementsLi[i].addEventListener("mouseout", function() {
       if (this.querySelector("ul") != null) {
         this.querySelector("ul").style.display = "none"
+
       }
     })
   }
@@ -49,16 +51,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   })
 
-  var imagesElements = document.querySelectorAll(" .product img")
-  console.log(imagesElements);
   var productElement = document.querySelectorAll(" .product ");
   var infoAboutElement = document.querySelector(".infoAbout");
-  console.log(productElement);
 
   for (var i = 0; i < productElement.length; i++) {
     productElement[i].addEventListener("mouseover", function() {
 
-        this.querySelector(".infoAbout").style.display = "block"
+      this.querySelector(".infoAbout").style.display = "block"
 
     })
     productElement[i].addEventListener("mouseout", function() {
@@ -67,5 +66,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     })
   }
+
+  var burger = document.querySelector(".burger");
+  var counter = 0;
+  burger.addEventListener("click", function() {
+      counter++;
+      burger.children[0].classList.toggle("change1");
+      burger.children[1].classList.toggle("change2");
+      burger.children[2].classList.toggle("change3");
+      document.querySelector("header").classList.toggle("longerHeader");
+      if (counter%2==0) {
+        document.querySelector(".menu").style.display="none";
+      }
+      else {
+        document.querySelector(".menu").style.display="block";
+      }
+    })
+
+
 
 })

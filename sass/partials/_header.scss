@@ -52,6 +52,9 @@ header {
       -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
       transform: rotate(45deg) translate(-8px, -8px) ;
   }
+  .visible{
+    display: block !important;
+  }
   .menu{
     width: 100%;
     position: absolute;
@@ -177,7 +180,7 @@ header {
           padding: 10px;
           width: 100px;
           margin: 0;
-          
+
         }
 
         li:hover {

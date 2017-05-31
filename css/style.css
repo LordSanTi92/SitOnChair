@@ -356,6 +356,8 @@ header {
   header .change3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px); }
+  header .visible {
+    display: block !important; }
   header .menu {
     width: 100%;
     position: absolute;
@@ -480,7 +482,7 @@ body {
   background: -o-linear-gradient(top, white 0%, #ededed 100%);
   background: -ms-linear-gradient(top, white 0%, #ededed 100%);
   background: linear-gradient(to bottom, white 0%, #ededed 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#ffffff', endColorstr='#ededed', GradientType=0 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#ffffff', endColorstr='#ededed', GradientType=0 ); }
   #baner .slider ul {
     list-style: none; }
   #baner .slider li {
@@ -576,7 +578,7 @@ body {
   background-color: #F1F1F1; }
   #lapSection .headLap {
     width: 300px;
-    margin: 5% 0 7% 0;
+    margin: 5% 0 7%;
     font-size: 1.8rem;
     padding-bottom: 0.3rem;
     border-bottom: 0.6rem solid #27c7ab; }
@@ -677,7 +679,8 @@ body {
       color: white; }
     #lapSection .lapBorder:hover .priceTag {
       background-color: white; }
-      #lapSection .lapBorder:hover .priceTag p, #lapSection .lapBorder:hover .priceTag span {
+      #lapSection .lapBorder:hover .priceTag p,
+      #lapSection .lapBorder:hover .priceTag span {
         color: #27c7ab; }
     #lapSection .lapBorder:hover tr:nth-of-type(odd) {
       background-color: white; }
@@ -687,31 +690,206 @@ body {
       background-color: white;
       color: #27c7ab; }
 
+#application {
+  height: 1050px; }
+  #application .choosenColor {
+    color: #27c7ab !important; }
+  #application .visible {
+    display: block !important; }
+  #application .visible li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; }
+  #application .visible li:hover {
+    background-color: #27c7ab;
+    color: white; }
+  #application .application {
+    background-color: #f9f9f9;
+    padding: 30px 0; }
+  #application .head p {
+    color: #575757;
+    font-size: 18px;
+    border-bottom: 3px solid #27c7ab;
+    width: 300px; }
+  #application .form {
+    margin: 50px auto; }
+  #application .drop_down_list {
+    border: 1px solid #8de0d2;
+    width: 280px;
+    height: 38px;
+    background-color: white;
+    margin-top: 22px;
+    padding: 8px 12px;
+    position: relative;
+    margin: 22px auto; }
+  #application .list_label {
+    font-size: 20px;
+    color: #e2e2e2;
+    font-family: 'ralewaylight', Arial, Tahoma, sans-serif; }
+  #application .checkbox {
+    position: relative;
+    padding: 30px 0; }
+  #application .checkbox input {
+    display: block;
+    opacity: 0;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    cursor: pointer;
+    margin: 0 200px; }
+  #application .checkbox label {
+    display: block;
+    padding-left: 45px;
+    position: relative;
+    font-size: 20px;
+    color: #cecece;
+    line-height: 120%;
+    padding-top: 3px;
+    cursor: pointer; }
+  #application .checkbox label::after,
+  #application .checkbox label::before {
+    border: 1px solid #27c7ab;
+    content: "";
+    display: block;
+    left: 0;
+    height: 28px;
+    position: absolute;
+    width: 28px;
+    top: 0; }
+  #application .checkbox label::after {
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+    border: 0;
+    display: none; }
+  #application .checkbox input:checked + label::after {
+    display: block; }
+  #application .active {
+    background: url("../images/form_ok.jpg");
+    width: 48px;
+    height: 40px; }
+  #application .image_part img {
+    display: none; }
+  #application .summary_panel {
+    background-color: white;
+    width: 100%;
+    height: 335px;
+    padding: 0;
+    margin: 20px auto; }
+  #application .panel_left {
+    display: block;
+    float: left;
+    width: 64%;
+    vertical-align: top;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    height: 155px; }
+  #application .panel_right {
+    display: block;
+    float: left;
+    width: 35%;
+    border-left: 1px solid #e7e7e7;
+    text-align: right;
+    vertical-align: top;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    height: 155px; }
+  #application .panel_left h4,
+  #application .panel_right h4 {
+    color: #24baa0;
+    font-size: 23px; }
+  #application .panel_left span {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #5b5a5a;
+    display: block; }
+  #application .panel_right span {
+    display: block;
+    font-size: 22px;
+    color: #24baa0;
+    margin-top: 10px; }
+  #application .sum_label {
+    display: block;
+    width: 185px;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #5b5a5a; }
+  #application .sum {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #24baa0;
+    height: 100px; }
+  #application .list_arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #24baa0;
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    cursor: pointer; }
+  #application .list_panel {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 279px;
+    list-style: none;
+    margin: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    top: 39px;
+    display: none;
+    font-size: 20px; }
+  #application .list_panel li {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #585858; }
+  #application .title {
+    height: 30px; }
+  #application button {
+    display: block;
+    background-color: #27c7ab;
+    color: white;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto; }
+
 #forms {
   height: 700px; }
   #forms .headLap {
     width: 300px;
-    margin: 5% 0 3% 0;
+    margin: 5% 0 3%;
     font-size: 1.8rem;
     padding-bottom: 0.3rem;
     border-bottom: 0.6rem solid #27c7ab; }
-  #forms .col-14 input, #forms .col-14 textarea {
+  #forms .col-14 input,
+  #forms .col-14 textarea {
     display: block;
     width: 100%;
     border: 1px solid #b1f0e5; }
-    #forms .col-14 input::-webkit-input-placeholder, #forms .col-14 textarea::-webkit-input-placeholder {
+    #forms .col-14 input::-webkit-input-placeholder,
+    #forms .col-14 textarea::-webkit-input-placeholder {
       color: silver;
       font-size: 2rem;
       font-weight: 100; }
-    #forms .col-14 input:-moz-placeholder, #forms .col-14 textarea:-moz-placeholder {
+    #forms .col-14 input:-moz-placeholder,
+    #forms .col-14 textarea:-moz-placeholder {
       color: silver;
       font-size: 2rem;
       font-weight: 100; }
-    #forms .col-14 input::-moz-placeholder, #forms .col-14 textarea::-moz-placeholder {
+    #forms .col-14 input::-moz-placeholder,
+    #forms .col-14 textarea::-moz-placeholder {
       color: silver;
       font-size: 2rem;
       font-weight: 100; }
-    #forms .col-14 input:-ms-input-placeholder, #forms .col-14 textarea:-ms-input-placeholder {
+    #forms .col-14 input:-ms-input-placeholder,
+    #forms .col-14 textarea:-ms-input-placeholder {
       color: silver;
       font-size: 2rem;
       font-weight: 100; }
@@ -735,7 +913,7 @@ body {
     position: relative;
     float: left;
     display: block;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 22px; }
     #forms .col-10 input:after {
       content: "";
@@ -765,7 +943,7 @@ body {
     font-size: 1.4rem;
     color: lightgrey; }
   #forms .col-10 button {
-    margin: 22px 0 0 0px;
+    margin: 22px 0 0;
     width: 250px;
     height: 45px;
     color: white;
@@ -803,7 +981,7 @@ body {
       #baner .col-1:nth-of-type(4) a {
         position: absolute;
         top: -258px;
-        right: 0px;
+        right: 0;
         font-size: 5rem;
         color: #27c7ab;
         text-decoration: none; }
@@ -843,10 +1021,12 @@ body {
       display: inline-block; }
     #baner img {
       width: 400px; }
-    #baner .col-1:nth-of-type(1), #baner .col-1:nth-of-type(4) {
+    #baner .col-1:nth-of-type(1),
+    #baner .col-1:nth-of-type(4) {
       display: block;
       position: relative; }
-      #baner .col-1:nth-of-type(1) a, #baner .col-1:nth-of-type(4) a {
+      #baner .col-1:nth-of-type(1) a,
+      #baner .col-1:nth-of-type(4) a {
         position: absolute;
         top: 100px;
         font-size: 5rem;
@@ -997,7 +1177,7 @@ body {
     background-color: #F1F1F1; }
     #lapSection .headLap {
       width: 300px;
-      margin: 5% 0 7% 0;
+      margin: 5% 0 7%;
       font-size: 1.8rem;
       padding-bottom: 0.3rem;
       border-bottom: 0.6rem solid #27c7ab; }
@@ -1006,8 +1186,7 @@ body {
       margin: 0; }
     #lapSection .col-8:nth-of-type(2) .content {
       width: 95%;
-      margin: 0;
-      margin-left: 3%; }
+      margin: 0 0 0 3%; }
     #lapSection .col-8:nth-of-type(3) .content {
       width: 95%;
       margin: 0;
@@ -1095,27 +1274,32 @@ body {
     height: 500px; }
     #forms .headLap {
       width: 300px;
-      margin: 5% 0 3% 0;
+      margin: 5% 0 3%;
       font-size: 1.8rem;
       padding-bottom: 0.3rem;
       border-bottom: 0.6rem solid #27c7ab; }
-    #forms .col-14 input, #forms .col-14 textarea {
+    #forms .col-14 input,
+    #forms .col-14 textarea {
       display: block;
       width: 100%;
       border: 1px solid #b1f0e5; }
-      #forms .col-14 input::-webkit-input-placeholder, #forms .col-14 textarea::-webkit-input-placeholder {
+      #forms .col-14 input::-webkit-input-placeholder,
+      #forms .col-14 textarea::-webkit-input-placeholder {
         color: silver;
         font-size: 2rem;
         font-weight: 100; }
-      #forms .col-14 input:-moz-placeholder, #forms .col-14 textarea:-moz-placeholder {
+      #forms .col-14 input:-moz-placeholder,
+      #forms .col-14 textarea:-moz-placeholder {
         color: silver;
         font-size: 2rem;
         font-weight: 100; }
-      #forms .col-14 input::-moz-placeholder, #forms .col-14 textarea::-moz-placeholder {
+      #forms .col-14 input::-moz-placeholder,
+      #forms .col-14 textarea::-moz-placeholder {
         color: silver;
         font-size: 2rem;
         font-weight: 100; }
-      #forms .col-14 input:-ms-input-placeholder, #forms .col-14 textarea:-ms-input-placeholder {
+      #forms .col-14 input:-ms-input-placeholder,
+      #forms .col-14 textarea:-ms-input-placeholder {
         color: silver;
         font-size: 2rem;
         font-weight: 100; }
@@ -1180,27 +1364,32 @@ body {
     height: 500px; }
     #forms .headLap {
       width: 300px;
-      margin: 5% 0 3% 0;
+      margin: 5% 0 3%;
       font-size: 1.8rem;
       padding-bottom: 0.3rem;
       border-bottom: 0.6rem solid #27c7ab; }
-    #forms .col-14 input, #forms .col-14 textarea {
+    #forms .col-14 input,
+    #forms .col-14 textarea {
       display: block;
       width: 100%;
       border: 1px solid #b1f0e5; }
-      #forms .col-14 input::-webkit-input-placeholder, #forms .col-14 textarea::-webkit-input-placeholder {
+      #forms .col-14 input::-webkit-input-placeholder,
+      #forms .col-14 textarea::-webkit-input-placeholder {
         color: silver;
         font-size: 2rem;
         font-weight: 100; }
-      #forms .col-14 input:-moz-placeholder, #forms .col-14 textarea:-moz-placeholder {
+      #forms .col-14 input:-moz-placeholder,
+      #forms .col-14 textarea:-moz-placeholder {
         color: silver;
         font-size: 2rem;
         font-weight: 100; }
-      #forms .col-14 input::-moz-placeholder, #forms .col-14 textarea::-moz-placeholder {
+      #forms .col-14 input::-moz-placeholder,
+      #forms .col-14 textarea::-moz-placeholder {
         color: silver;
         font-size: 2rem;
         font-weight: 100; }
-      #forms .col-14 input:-ms-input-placeholder, #forms .col-14 textarea:-ms-input-placeholder {
+      #forms .col-14 input:-ms-input-placeholder,
+      #forms .col-14 textarea:-ms-input-placeholder {
         color: silver;
         font-size: 2rem;
         font-weight: 100; }
@@ -1219,7 +1408,7 @@ body {
       margin-left: 15%;
       max-width: 180px; }
     #forms .col-10 .row {
-      margin: 0 10% 0 10%; }
+      margin: 0 10%; }
     #forms .col-10 input {
       position: relative;
       float: left;
@@ -1262,3 +1451,169 @@ body {
       border: none;
       font-size: 2rem;
       border-radius: 5px; } }
+
+@media only screen and (min-width: 850px) {
+  #application {
+    height: 400px;
+    margin-top: 50px; }
+    #application .visible {
+      display: block !important; }
+    #application .application {
+      background-color: #f9f9f9;
+      padding: 30px 0; }
+    #application .head p {
+      color: #575757;
+      font-size: 18px;
+      border-bottom: 3px solid #27c7ab;
+      width: 300px; }
+    #application .choice_part {
+      float: left; }
+    #application .imgblock {
+      display: block !important; }
+    #application .image_part img {
+      display: none; }
+    #application .drop_down_list {
+      border: 1px solid #8de0d2;
+      width: 280px;
+      height: 38px;
+      background-color: white;
+      margin-top: 22px;
+      padding: 8px 12px;
+      position: relative;
+      margin: 22px 0; }
+    #application .list_label {
+      font-size: 20px;
+      color: #e2e2e2;
+      font-family: 'ralewaylight', Arial, Tahoma, sans-serif; }
+    #application .checkbox {
+      position: relative;
+      padding: 30px 30px 30px 0; }
+    #application .checkbox input {
+      display: block;
+      opacity: 0;
+      height: 48px;
+      position: absolute;
+      width: 48px;
+      cursor: pointer; }
+    #application .checkbox label {
+      display: block;
+      padding-left: 45px;
+      position: relative;
+      font-size: 20px;
+      color: #cecece;
+      line-height: 120%;
+      padding-top: 3px;
+      cursor: pointer; }
+    #application .checkbox label::after,
+    #application .checkbox label::before {
+      border: 1px solid #27c7ab;
+      content: "";
+      display: block;
+      left: 0;
+      height: 38px;
+      position: absolute;
+      width: 38px;
+      top: -5px; }
+    #application .checkbox label::after {
+      background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+      border: 0;
+      display: none; }
+    #application .checkbox input:checked + label::after {
+      display: block; }
+    #application .active {
+      background: url("../images/form_ok.jpg");
+      width: 48px;
+      height: 40px; }
+    #application .summary_part {
+      height: 300px; }
+    #application .summary_panel {
+      background-color: white;
+      width: 100%;
+      height: 235px;
+      padding: 0;
+      margin: 20px auto; }
+    #application .panel_left {
+      display: block;
+      float: left;
+      width: 60%;
+      vertical-align: top;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e7e7e7;
+      height: 155px; }
+    #application .choosenColor {
+      color: #27c7ab; }
+    #application .panel_right {
+      display: block;
+      float: left;
+      width: 35%;
+      border-left: 1px solid #e7e7e7;
+      text-align: right;
+      vertical-align: top;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e7e7e7;
+      height: 155px; }
+    #application .panel_left h4,
+    #application .panel_right h4 {
+      color: #24baa0;
+      font-size: 23px; }
+    #application .panel_left span {
+      margin-top: 10px;
+      font-size: 22px;
+      color: #5b5a5a;
+      display: block; }
+    #application .panel_right span {
+      display: block;
+      font-size: 22px;
+      color: #24baa0;
+      margin-top: 10px; }
+    #application .sum_label {
+      display: block;
+      width: 185px;
+      margin-top: 10px;
+      font-size: 22px;
+      color: #5b5a5a;
+      float: left; }
+    #application .sum {
+      display: block;
+      width: 30%;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 22px;
+      color: #24baa0;
+      height: 50px;
+      float: right; }
+    #application .list_arrow {
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #24baa0;
+      display: block;
+      position: absolute;
+      right: 14px;
+      top: 13px;
+      cursor: pointer; }
+    #application .list_panel {
+      background-color: white;
+      border: 1px solid #ccc;
+      width: 279px;
+      list-style: none;
+      margin: 0;
+      left: 0;
+      z-index: 2;
+      position: absolute;
+      top: 38px;
+      display: none;
+      font-size: 20px; }
+    #application .title {
+      height: 30px; }
+    #application button {
+      display: block;
+      background-color: #27c7ab;
+      color: white;
+      height: 30px;
+      width: 200px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 0 auto; } }
